@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ariane Saulnier - UX Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar" id="myNavbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a class="icon" onclick="navBar()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="hero-container">
+        <p>Hello, I'm Ariane Saulnier</p>
+        <h2>
+          a Full Stack Software Developer with a Diploma in E-commerce
+          Applications.
+        </h2>
+        <a href="#portfolio" class="cta-button">Explore Portfolio</a>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery section -->
+    <section id="portfolio">
+      <div class="container">
+        <h2>Portfolio Gallery</h2>         
+
+        <!-- Project 1 -->
+        <div class="portfolio-item-red-bg">
+          <div class="project-image">
+            <img src="cafezest.png" alt="Project 1" />
+          </div>
+          <div class="project-details">
+            <h3>Project 1: CafeZest</h3>
+            <p>
+              This project aims to create a modern and user-friendly online platform for CafeZest, a fictional cafe. The primary objectives of this project were to establish a strong online presence, create a booking functionality, and provide an enjoyable digital experience for restaurant patrons.
+            </p>
+            <button href="#">Live link</button>
+            <br>
+            <button href="#">GitHub Project</button>
+            <br>
+            <button id="case-study-button1">Case Study</button>           
+          </div>
+        </div>
+        <section id="case-study1" class="case-study hidden">
+            <div class="case-study-content">
+                <h3>Project Overview</h3>
+                <ul>
+                  <li><strong>Establish Online Presence:</strong> Create a modern and attractive website to showcase the cafe's menu, ambiance, and location.</li>
+                  <li><strong>Booking Functionality:</strong> Implement a reservation system that allows customers to book tables online.</li>
+                  <li><strong>Enhanced User Experience:</strong> Ensure a seamless and enjoyable experience for website visitors.</li>
+                </ul>
+                <h3>Tools and Technologies</h3>
+                <ul>
+                <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript, Django</li>
+                <li><strong>Third-party APIs:</strong> Google Maps API, Email Service API</li>
+                <strong><li>Version Control:</strong> Git/GitHub</li>
+                </ul>
+            </div>
+          </section>   
+
+        <!-- Project 2 -->
+        <div class="portfolio-item-green-bg">
+          <div class="project-image">
+            <img src="modus.png" alt="Project 2" />
+          </div>
+          <div class="project-details">
+            <h3>Project 2: E-commerce Redesign</h3>
+            <p>
+              We redesigned the checkout process of a popular e-commerce
+              website, improving user satisfaction.
+            </p>
+            <button id="case-study-button2">Case Study</button>
+            <section id="case-study2" class="case-study hidden">
+              <div class="case-study-content">
+                <h3>Project Overview</h3>
+                <ul>
+                    <li><strong>Project Name:</strong> ModusDesign</li>
+                </ul>
+                
+                <p>The CafeZest Website project aimed to create a modern and user-friendly online platform. The primary objectives were to establish a strong online presence, to create a booking functionality, and provide an enjoyable digital experience for restaurant patrons. </p>
+
+                <h3>Tools and Technologies</h3>
+                <ul>
+                <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript, Django</li>
+                <li><strong>Third-party APIs:</strong> Google Maps API, Email Service API</li>
+                <strong><li>Version Control:</strong> Git/GitHub</li>
+                </ul>
+            </div>
+              </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate individual with a deep curiosity for technology and
+          a strong desire to embark on a career in web development.
+        </p>
+        <ul>
+          <li>
+            <strong>Passion for Learning:</strong> I'm a fast learner, eager to
+            absorb new information, and excited about staying up-to-date with
+            the latest industry trends and best practices.
+          </li>
+          <li>
+            <strong>Strong Problem-Solving Skills:</strong> I have a natural
+            ability to break down complex problems into manageable parts and
+            find effective solutions.
+          </li>
+          <li>
+            <strong>Excellent Communication:</strong> My background in primary
+            and secondary school teaching has honed my communication skills,
+            enabling me to collaborate effectively with cross-functional teams
+            and clients.
+          </li>
+          <li>
+            <strong>Attention to Detail:</strong> I'm meticulous and focused,
+            which ensures the quality and precision of my work.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          If you'd like to get in touch or discuss potential opportunities, feel
+          free to reach out:
+        </p>
+
+        <div class="contact-options">
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <form action="your-email-handler.php" method="POST">
+              <div class="form-group">
+                <label for="name">Name :</label>
+                <br>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <br>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message :</label>
+                <br>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+            <!-- Contact Links -->
+            <div class="contact-links">
+                <div id="email-container">
+                    <a id="email-icon" aria-hidden="true"><i class="fa fa-envelope"></i>Email <a id="email-address" class="hidden">ariane.saulnier@gmail.com</a></a>
+                    <a href="https://www.linkedin.com/in/ariane-saulnier" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/aria-vero-s" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                </div>                  
+            </div>
+        <p>&copy; 2023 Ariane Saulnier - UX Designer</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
