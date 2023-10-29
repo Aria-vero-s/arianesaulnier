@@ -5,34 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ariane Saulnier - UX Designer</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
   <body>
     <header>
-      <div class="navbar" id="myNavbar">
+      <nav class="navbar" id="myNavbar">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <a class="icon" onclick="navBar()">
           <i class="fa fa-bars"></i>
         </a>
-      </div>
-    </header>
-
-    <section id="hero">
+      </nav>
       <div class="hero-container">
-        <p>Hello, I'm Ariane Saulnier</p>
+        <h3>Hello, I'm Ariane Saulnier</h3>
         <h2>
           a Full Stack Software Developer with a Diploma in E-commerce
           Applications.
         </h2>
         <a href="#portfolio" class="cta-button">Explore Portfolio</a>
       </div>
-    </section>
+    </header>
 
     <!-- Portfolio Gallery section -->
     <section id="portfolio">
@@ -76,34 +70,42 @@
         <!-- Project 2 -->
         <div class="portfolio-item-green-bg">
           <div class="project-image">
-            <img src="modus.png" alt="Project 2" />
+            <img src="pianist.png" alt="Project 2" />
           </div>
           <div class="project-details">
-            <h3>Project 2: E-commerce Redesign</h3>
+            <h3>Project 2: Pianist Website</h3>
             <p>
-              We redesigned the checkout process of a popular e-commerce
-              website, improving user satisfaction.
+              I'm passionate about creating beautiful websites that not only look good but also function seamlessly. This single-page website showcases a pianist in an elegant and functional design.
             </p>
+            <button href="www.aria-vero-s.github.io/pianist/" target="_blank">Live link</button>
+            <br>
+            <button href="www.github.com/Aria-vero-s/pianist" target="_blank">GitHub Project</button>
+            <br>
             <button id="case-study-button2">Case Study</button>
-            <section id="case-study2" class="case-study hidden">
-              <div class="case-study-content">
-                <h3>Project Overview</h3>
-                <ul>
-                    <li><strong>Project Name:</strong> ModusDesign</li>
-                </ul>
-                
-                <p>The CafeZest Website project aimed to create a modern and user-friendly online platform. The primary objectives were to establish a strong online presence, to create a booking functionality, and provide an enjoyable digital experience for restaurant patrons. </p>
-
-                <h3>Tools and Technologies</h3>
-                <ul>
-                <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript, Django</li>
-                <li><strong>Third-party APIs:</strong> Google Maps API, Email Service API</li>
-                <strong><li>Version Control:</strong> Git/GitHub</li>
-                </ul>
-            </div>
-              </section>
           </div>
         </div>
+        <section id="case-study2" class="case-study hidden">
+          <div class="case-study-content2">
+            <h3>Project Overview</h3>
+            <ul>
+                <li><strong>Project Name:</strong> Pianist Website</li>
+            </ul>
+            
+            <p>The Pianist Website project showcases my ability to meet specific client requirements and to customize websites according to individual preferences. I approach each project with a problem-solving mindset, ensuring that the end result is a well-crafted and fully functional website. This also served as a valuable opportunity for me to hone my web development skills.</p>
+            <h3>Working with a client</h3>
+            <ul>
+              <li><strong>Client Collaboration and Problem Solving:</strong> I customized the website with a blurry grayscale photo background, showing my ability to cater to unique client requests. However, while open to client ideas, I exercised professional judgment by refusing design elements that might have compromised the website's overall quality, demonstrating the importance of maintaining design integrity.</li>
+              <li><strong>Multilingual Support:</strong> The inclusion of translation buttons for English, French, and Italian highlights my proficiency in adding multi-language support to websites, making them accessible to a global audience.</li>
+              <li><strong>Responsive Design:</strong> The website is fully responsive, adapting to different screen sizes, showcasing my skills in creating websites that are accessible on various devices.</li>
+              <li><strong>User-Centric Approach:</strong> I made the user experience a top priority, with a focus on both aesthetics and functionality.</li>
+            </ul>
+            <h3>Tools and Technologies</h3>
+            <ul>
+            <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>Version Control:</strong> VisualCodeStudio, GitHub</li>
+            </ul>
+            </div>
+          </section>
       </div>
     </section>
     
@@ -147,30 +149,28 @@
           If you'd like to get in touch or discuss potential opportunities, feel
           free to reach out:
         </p>
-
-        <div class="contact-options">
-          <!-- Contact Form -->
-          <div class="contact-form">
-            <form action="your-email-handler.php" method="POST">
-              <div class="form-group">
-                <label for="name">Name :</label>
-                <br>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email :</label>
-                <br>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                <label for="message">Message :</label>
-                <br>
-                <textarea id="message" name="message" required></textarea>
-              </div>
-              <button type="submit">Send Message</button>
+          <div class="contact-form-container" id="contact-form-container">
+            <p></p>
+            <br>
+            <form class="contact-form" id="contact-form">
+              <label for="name">Name: </label>
+              <input type="text" id="name" name="name" required />
+    
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+    
+              <label for="message">Message: </label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <br>
+              <button type="submit" id="send-email-button">Submit</button>
             </form>
           </div>
-        </div>
+          <div id="success-message" style="display: none;">
+            Message sent! / Message envoyé!
+          </div>
+          <div id="error-message" style="display: none;">
+            Error! / Erreur!
+          </div>
       </div>
     </section>
 

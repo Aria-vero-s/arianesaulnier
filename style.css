@@ -39,7 +39,9 @@ h2 {
 }
 
 h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
+    font-size: 1.5rem;
 }
 
 button {
@@ -78,68 +80,21 @@ li {
     padding-bottom: 50px;
 }
 
-/* Header styles */
-
-header {
-    background-color: transparent;
-}
-
-.navbar {
-    background-color: transparent;
-    overflow: hidden;
-}
-
-.navbar a {
-    float: left;
-    font-size: 1.2rem;
-    font-weight: 900;
-    color: #fe5f55;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* navbar for mobile navigation */
-
-.navbar .icon {
-    display: none;
-}
-
-@media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .icon {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-
 /* Hero section */
 
-#hero {
-    background-image: url('hero-background.jpg');
+header {
+    background-image: url("hero-background.jpg");
     background-size: cover;
-    padding: 100px 0;
-    height: calc(100vh - 300px);
+    background-position: center;
+    text-align: center;
+    height: 100vh;
 }
 
 .hero-container {
     max-width: 660px;
     margin: 0 auto;
     padding: 20px;
+    padding-top:180px;
     text-align: left;
 }
 
@@ -166,7 +121,66 @@ header {
     background-color: #fe5f55;
 }
 
+/* navbar */
+
+.navbar {
+    background-color: #eef5db;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #fe5f55;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar a:hover {
+    color:#f0b67f;
+}
+
+/* navbar for mobile navigation */
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* About */
+
+#about {
+    background-color: #eef5db;
+}
+
 /* Portfolio Gallery */
+
+#portfolio {
+    background-color: #eef5db;
+}
 
 .portfolio-item-red-bg {
     display: flex;
@@ -174,6 +188,10 @@ header {
     background-color: #fe5f55;
     color: #eef5db;
     border-radius: 10px;
+}
+
+.portfolio-item-red-bg h2 h3 {
+    color: #eef5db !important;
 }
 
 .portfolio-item-red-bg button {
@@ -201,6 +219,10 @@ header {
     background-color: #c7efcf;
     color: #707565;
     border-radius: 10px;
+}
+
+.portfolio-item-green-bg h2 h3 {
+    color: #707565;
 }
 
 .portfolio-item-green-bg button {
@@ -253,6 +275,16 @@ header {
     padding:20px;
 }
 
+.case-study-content2 {
+    flex: 100%;
+    text-align: left;
+    margin-bottom: 120px;
+    background-color: #c7efcf;
+    color: #707565;
+    border-radius: 10px;
+    padding:20px;
+}
+
 .hidden {
     display: none;
   }  
@@ -267,30 +299,41 @@ header {
   .visible {
     max-height: 1000px;
   }
-  
-  
 
 /* contact */
-input, textarea{
-    width:100%;
-    border:none;
-    background-color: #c7efcf;
-    margin-bottom: 10px;
+
+#contact {
+    background-color: #eef5db;
+    padding:10px;
+}
+  
+.contact-form label {
+    display: block;
     margin-top: 10px;
-    padding-top: 50px;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border:none;
+    padding-bottom:20px;
     border-radius: 5px;
 }
-
-label {
-    margin-bottom: 100px;
-    margin-top: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  
+.contact-form button {
+    background-color: #d6d1b1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
-
-.form-group {
-    padding:10px;
-    padding-top:10px;
+  
+.contact-form button:hover {
+    transition: all 0.3s;
+    color:#707565;
+    background-color: #c7efcf;
 }
 
 /* Footer */
