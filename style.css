@@ -414,3 +414,16 @@ i {
 .contact-links a:hover {
     color: #707565;
 }
+
+
+/* Styles for mobile view */
+@media (max-width: 568px) {
+    footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-links a {
+        display: flex;
+        flex-direction: column;
+    }
+}
