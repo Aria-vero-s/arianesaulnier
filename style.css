@@ -104,6 +104,13 @@ header {
     font-size: 3rem;
 }
 
+/* Styles for mobile view */
+@media (max-width: 568px) {
+    .hero-container h2 {
+        font-size: 2rem !important;
+    }
+}
+
 .cta-button {
     font-size: 1.2rem;
     display: inline-block;
@@ -185,22 +192,30 @@ nav {
         flex-direction: column;
         background-color: transparent;
         position: absolute;
-        top: 50px;
+        top: 0px;
         left: 0;
-        padding-left:10px;
         width: 100%;
-        text-align: left;
+        text-align: center;
+        justify-content: center;
+        font-size: 2rem;
         z-index: 1;
         transition: all 0.3s;
+    }
+
+    .nav-links li{
+        margin-top:20px;
+        margin-bottom:20px;
     }
 
     .nav-links.active {
         display: flex;
         background-color: #eef5db;
+        height:100vh;
     }
 
     .menu-toggle {
         display: flex;
+        z-index: 1000;
     }
 }
 
@@ -309,6 +324,29 @@ nav {
     padding:20px;
 }
 
+/* Styles for mobile view */
+@media (max-width: 768px) {
+    .portfolio-item-red-bg,
+    .portfolio-item-green-bg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding:20px;
+    }
+  
+    .project-image,
+    .project-details {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .project-details {
+      padding: 10px;
+    }
+  }  
+
 .case-study-content2 {
     flex: 100%;
     text-align: left;
@@ -323,7 +361,6 @@ nav {
     display: none;
   }  
 
-/* Add this to your CSS */
 .case-study {
     overflow: hidden;
     max-height: 0;
