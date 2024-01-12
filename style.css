@@ -64,6 +64,26 @@ button:hover {
     cursor: pointer;
 }
 
+.language-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fe5f55;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 0px !important;
+    border:1px solid;
+    border-color: #fe5f55;
+    transition: all 0.3s;
+}
+
+.language-button:hover {
+    color: #f0b67f;
+    border-color: #f0b67f;
+    cursor: pointer;
+}
+
 ul {
     padding:10px;
 }
@@ -193,6 +213,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-items: center;
+    
     padding: 1rem;
     transition: all 0.3s;
 }

@@ -110,3 +110,16 @@ document.addEventListener('DOMContentLoaded', function() {
       );
   });
 });
+
+// Change lauguage
+
+function changeLanguage(languageFile) {
+  // Load the content of the selected language file
+  fetch(languageFile)
+      .then(response => response.text())
+      .then(data => {
+          // Replace the current HTML with the content of the selected language file
+          document.documentElement.innerHTML = data;
+      })
+      .catch(error => console.error('Error loading language file:', error));
+}

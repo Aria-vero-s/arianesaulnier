@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ariane Saulnier - Développeuse Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <header>
+
+      <nav>
+        <ul class="nav-links">
+            <li><a href="#home"><strong>Accueil</strong></a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <button class="language-button" onclick="changeLanguage('index.html')">Changez la langue en anglais</button>
+    </nav>
+      <div class="hero-container">
+        <div class="hero-social-links">
+          <h3>Bonjour, je m'appelle Ariane Saulnier</h3>
+          <a href="https://www.linkedin.com/in/ariane-saulnier" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.github.com/aria-vero-s" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="hero-image">
+          <img class="profile-image" src="profile.png" alt="Photo de profil" />
+          <h2>
+            Diplômée en Développement Logiciel Full Stack
+          </h2>
+        </div>
+        <div class="hero-cta">
+          <a href="#portfolio" class="cta-button">Explorer le Portfolio</a>
+          <p class="resume">
+            <a href="https://docs.google.com/document/d/1iVi9CBD_dM3QZiiO7LMwB0xSv-2IcCLD/edit?usp=sharing&ouid=100004541730026593204&rtpof=true&sd=true" target="_blank"><button>CV en Anglais</button></a> /
+            <a href="https://docs.google.com/document/d/1WHr_YGP1iFmkEy_Z1ygaTs9pBe-owDuw/edit?usp=sharing&ouid=100004541730026593204&rtpof=true&sd=true" target="_blank"><button>CV en Français</button></a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section Galerie Portfolio -->
+    <section id="portfolio">
+      <div class="container">
+        <h2>Galerie Portfolio</h2>         
+
+        <!-- Projet 1 -->
+        <div class="portfolio-item-red-bg">
+          <div class="project-image">
+            <img src="modus.png" alt="Projet 1" />
+          </div>
+          <div class="project-details">
+            <h3>Projet 1 : Modus Design</h3>
+            <p>
+              Modus Design est une plateforme e-commerce visant à fournir aux utilisateurs une sélection de templates de sites web préfabriqués et des services de design graphique sur mesure.
+            </p>
+            <a href="https://modusdesign.herokuapp.com/" target="_blank"><button>Lien Direct</button></a>
+            <br>
+            <a href="https://www.github.com/Aria-vero-s/modusdesign" target="_blank"><button>GitHub</button></a>
+            
+            <br>
+            <button id="case-study-button1">Étude de Cas</button>
+          </div>
+        </div>
+        <section id="case-study1" class="case-study hidden">
+          <div class="case-study-content">
+            <h3>Aperçu du Projet</h3>
+            <ul>
+                <li><strong>Nom du Projet:</strong> ModusDesign</li>
+            </ul>
+            
+            <p>L'objectif principal est de créer un environnement dynamique pour les clients et les administrateurs, facilitant l'interaction avec les templates de sites web et les services de design graphique.</p>
+            <h3>Aperçu du Projet</h3>
+            <ul>
+              <li><strong>Expérience Utilisateur (UX):</strong> Les utilisateurs peuvent facilement remplir un formulaire pour recevoir un devis automatique adapté à leurs besoins. Avoir une navigation fluide et un accès aux médias sociaux. L'inscription des utilisateurs permet l'achat de designs graphiques, et l'abonnement à la newsletter les tient informés des mises à jour.</li>
+              <li><strong>Objectifs du Propriétaire du Site:</strong> Le propriétaire du site peut gérer efficacement les commandes, présenter son travail et utiliser la fonctionnalité CRUD pour ajouter, éditer ou supprimer des produits, des services et des classes.</li>
+              <li><strong>Système de Paiement:</strong> Un système de paiement sécurisé, alimenté par Stripe, permet aux utilisateurs d'acheter des modèles HTML ou de louer des services de design.</li>
+              <li><strong>Produits et Services:</strong> Modus Design propose un catalogue de produits diversifié comprenant des modèles HTML et des services en design graphique.</li>
+            </ul>
+            <h3>Outils et Technologies</h3>
+            <ul>
+            <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>Back-End:</strong> Django (Python), AllAuth (Django Packages)</li>
+            <li><strong>Librairies:</strong> FontAwesome, Bootstrap 4.4.1</li>
+            <li><strong>Services de base de données:</strong> ElephantSQL (PostgreSQL)</li>
+            <li><strong>Services de stockage d'objets:</strong> AWS S3</li>
+            <li><strong>Déploiement :</strong> Heroku</li>
+            <strong><li>Contrôle de Version:</strong> VisualCodeStudio, Git/GitHub</li>
+            <li><strong>Autres Outils:</strong> Stripe (Système de Paiement)</li>
+            </ul>
+            </div>
+          </section>  
+        <!-- Projet 2 -->
+        <div class="portfolio-item-green-bg">
+            <div class="project-image">
+              <img src="pianist.png" alt="Projet 2" />
+            </div>
+            <div class="project-details">
+              <h3>Projet 2 : Site Web Pianiste</h3>
+              <p>
+                Je suis passionnée par la création de sites web esthétiques qui non seulement ont une belle apparence, mais fonctionnent également de manière efficace. Ce site web d'une page met en valeur un pianiste dans une conception élégante et fonctionnelle.
+              </p>
+              <a href="https://aria-vero-s.github.io/pianist/" target="_blank"><button>Lien Direct</button></a>
+              <br>
+              <a href="https://www.github.com/Aria-vero-s/pianist" target="_blank"><button>GitHub</button></a>
+              
+              <br>
+              <button id="case-study-button2">Étude de Cas</button>
+            </div>
+          </div>
+          <section id="case-study2" class="case-study hidden">
+            <div class="case-study-content2">
+              <h3>Aperçu du Projet</h3>
+              <ul>
+                  <li><strong>Nom du Projet:</strong> Portfolio du Pianiste</li>
+              </ul>
+              
+              <p>Le projet Pianiste met en avant ma capacité à répondre aux exigences spécifiques du client et à personnaliser les sites web selon les préférences individuelles. J'aborde chaque projet avec une mentalité de résolution de problèmes, en m'assurant que le résultat final est un site web bien conçu et entièrement fonctionnel. Cela a également été une occasion précieuse pour moi de perfectionner mes compétences en développement web.</p>
+              <h3>Travail avec un client</h3>
+              <ul>
+                <li><strong>Collaboration avec le Client et Résolution de Problèmes :</strong> J'ai personnalisé le site web en fonction des demandes du client. Cependant, tout en étant ouverte aux idées du client, j'ai exercé un jugement professionnel sur les éléments de design en maintenant la fonctionnalité et l'intégrité.</li>
+                <li><strong>Support Multilingue :</strong> Le client souhaitait l'inclusion de boutons de traduction pour l'anglais, le français et l'italien. J'ai utilisé JavaScript pour y parvenir et stocké les textes de traduction dans des objets JavaScript.</li>
+                <li><strong>Design Réactif :</strong> Le site web est entièrement réactif, s'adaptant à différentes tailles d'écran, démontrant ainsi mes compétences dans la création de sites web accessibles sur divers appareils.</li>
+                <li><strong>Approche Axée sur l'Utilisateur :</strong> J'ai fait de l'expérience utilisateur une priorité, en mettant l'accent sur l'esthétique et la fonctionnalité.</li>
+              </ul>
+              <h3>Outils et Technologies</h3>
+              <ul>
+              <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript</li>
+              <li><strong>Contrôle de Version:</strong> VisualCodeStudio, GitHub</li>
+              </ul>
+              </div>
+            </section>
+          <!-- Projet 3 -->
+          <div class="portfolio-item-red-bg">
+            <div class="project-image">
+              <img src="artpulse.png" alt="Projet 3" />
+            </div>
+            <div class="project-details">
+              <h3>Projet 3 : Galerie d'Art</h3>
+              <p>
+                Le projet Django ArtPulse est un site web offrant aux utilisateurs un espace unique pour explorer, partager et se connecter avec d'autres artistes. Développé avec le framework Django en Python et AllAuth, le site web comprend diverses fonctionnalités telles que la recherche d'œuvres d'art, la gestion de compte utilisateur, la publication d'œuvres d'art et des fonctionnalités interactives telles que les évaluations et les commentaires.
+              </p>
+              <a href="https://artpulse-2c17e5a691a0.herokuapp.com/" target="_blank"><button>Lien Direct</button></a>
+              <br>
+              <a href="https://www.github.com/Aria-vero-s/artpulse" target="_blank"><button>GitHub</button></a>
+              <br>
+              <button id="case-study-button3">Étude de Cas</button>           
+            </div>
+          </div>
+          <section id="case-study3" class="case-study hidden">
+              <div class="case-study-content3">
+                  <h3>Aperçu du Projet</h3>
+                  <ul>
+                    <li><strong>Découverte Efficace d'Œuvres d'Art :</strong> Les utilisateurs peuvent utiliser divers filtres, y compris le titre, le nom de l'artiste, les mots-clés, la catégorie et la note, assurant une expérience d'exploration sur mesure et conviviale.</li>
+                    <li><strong>Gestion de Base de Données :</strong> Ls utilisateurs peuvent publier leurs œuvres d'art et les gérer efficacement. Cela inclut la mise à jour ou la suppression d'œuvres d'art de leurs profils, favorisant ainsi un sentiment de propriété et de contrôle pour les artistes sur leur portfolio.</li>
+                    <li><strong>Design UI/UX :</strong> Le design est complété par des fonctionnalités qui encouragent l'interaction, telles que des vues en plein écran des images, des commentaires et des évaluations. L'éthique de la plateforme, mise en avant sur la page d'accueil, souligne les valeurs fondamentales de la connexion entre les artistes, la facilitation du partage d'œuvres d'art et la promotion de la découverte de nouvelles oeuvres et individus.</li>
+                  </ul>
+                  <h3>Outils et Technologies</h3>
+                  <ul>
+                  <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript</li>
+                  <li><strong>Back-End:</strong> Django (Python), AllAuth (Django Packages)</li>
+                  <li><strong>Services de base de données:</strong> ElephantSQL (PostgreSQL)</li>
+                  <li><strong>Services de stockage d'objets:</strong> AWS S3</li>
+                  <li><strong>Déploiement :</strong> Heroku</li>
+                  <strong><li>Contrôle de Version:</strong> Git/GitHub</li>
+                  </ul>
+              </div>
+            </section> 
+                  <!-- Projet 4 -->
+        <div class="portfolio-item-green-bg">
+            <div class="project-image">
+              <img src="cafezest.png" alt="Projet 4" />
+            </div>
+            <div class="project-details">
+              <h3>Projet 4 : CafeZest</h3>
+              <p>
+                Ce projet vise à créer une plateforme en ligne moderne et conviviale pour CafeZest, un café fictif. Les objectifs principaux de ce projet étaient d'établir une forte présence en ligne, de créer une fonctionnalité de réservation et de fournir une expérience numérique agréable pour les clients du restaurant.
+              </p>
+              <a href="https://cafezest-ab319720943f.herokuapp.com/" target="_blank"><button>Lien Direct</button></a>
+              <br>
+              <a href="https://www.github.com/Aria-vero-s/cafezest" target="_blank"><button>GitHub</button></a>
+              <br>
+              <button id="case-study-button4">Étude de Cas</button>           
+            </div>
+          </div>
+          <section id="case-study4" class="case-study hidden">
+              <div class="case-study-content">
+                  <h3>Aperçu du Projet</h3>
+                  <ul>
+                    <li><strong>Établir une Présence en Ligne :</strong> Créer un site web moderne et attrayant pour présenter le menu, l'ambiance et l'emplacement du café.</li>
+                    <li><strong>Fonctionnalité de Réservation :</strong> Mettre en place un système de réservation permettant aux clients de réserver des tables en ligne.</li>
+                    <li><strong>Expérience Utilisateur Améliorée :</strong> Assurer une expérience fluide et agréable pour les visiteurs du site web.</li>
+                  </ul>
+                  <h3>Outils et Technologies</h3>
+                  <ul>
+                    <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Back-End:</strong> Django (Python), AllAuth (Django Packages)</li>
+                    <li><strong>Services de base de données:</strong> ElephantSQL (PostgreSQL)</li>
+                    <li><strong>Services de stockage d'objets:</strong> AWS S3</li>
+                    <li><strong>Déploiement :</strong> Heroku</li>
+                    <strong><li>Contrôle de Version:</strong> Git/GitHub</li>
+                  </ul>
+              </div>
+            </section>
+            <!-- Projet 5 -->
+          <div class="portfolio-item-red-bg">
+            <div class="project-image">
+              <img src="enviro.png" alt="Projet 5" />
+            </div>
+            <div class="project-details">
+              <h3>Projet 5 : Terminal Python</h3>
+              <p>
+                Enviro est un terminal Python conçue pour recueillir les réponses des utilisateurs sur le thème du changement climatique. Développé pour fonctionner sur le terminal fictif de Code Institute déployé sur Heroku, ce projet offre une plateforme simple mais efficace pour que les utilisateurs expriment leurs opinions sur des questions liées au climat.
+              </p>
+              <a href="https://enviro-heroku.herokuapp.com/" target="_blank"><button>Lien Direct</button></a>
+              <br>
+              <a href="https://www.github.com/Aria-vero-s/enviro" target="_blank"><button>GitHub</button></a>
+              <br>           
+            </div>
+          </div>
+          <section id="case-study5" class="case-study hidden">
+              <div class="case-study-content5">
+                  <h3>Aperçu du Projet</h3>
+                  <ul>
+                    <li><strong>Validation des Entrées et Vérification des Erreurs :</strong> Validation des entrées pour détecter les erreurs, fournissant des commentaires et permettant aux utilisateurs de corriger leurs réponses.</li>
+                    <li><strong>Données vers Google Sheet :</strong> Utilisation de l'API Google Sheet pour envoyer les réponses des utilisateurs vers une feuille Google Sheet liée à des fins d'analyse.</li>
+                    <li><strong>Modèle de Données :</strong> Utilisation d'une liste Python pour contenir les questions et les réponses à choix multiples. Une boucle for collecte les réponses et les vérifie, avec des réponses envoyées vers la feuille Google Sheet en utilisant la variable SHEET et l'API Google Sheet.</li>
+                  </ul>
+                  <h3>Outils et Technologies</h3>
+                  <ul>
+                  <li><strong>Langage :</strong> Python</li>
+                  <li><strong>APIs :</strong> Google Sheet API</li>
+                  <li><strong>Déploiement :</strong> Heroku</li>
+                  <strong><li>Contrôle de Version:</strong> Git/GitHub</li>
+                  </ul>
+              </div>
+            </section> 
+        </div>
+      </section>
+  
+
+      <section id="about">
+        <div class="container">
+          <h2>À propos de moi</h2>
+          <p>
+            Ariane Saulnier détient un diplôme du 'London UK Coding Institute' en tant que Développeuse Full Stack. Présentement à la recherche d'un emploi dans ce domaine, Ariane a aussi à son actif deux baccalauréats d'universités canadiennes en interprétation musicale et en éducation. Elle possède un grand sens de l'esthétique grâce à ses talents en dessin et son intérêt pour la photographie. Elle possède une excellente maîtrise du français et de l'anglais.
+          </p>
+          <ul>
+            <li>
+              <strong>Passion pour l'apprentissage :</strong> dotée d'une profonde curiosité pour la technologie et d'un fort désir de se lancer dans une carrière dans le développement Web. S'adapte rapidement à de nouvelles situations. Toujours prête à absorber de nouvelles informations et enthousiaste à l'idée de rester au courant des dernières tendances et des meilleures pratiques de l'industrie.
+            </li>
+            <li>
+              <strong>Compétences solides en résolution de problèmes :</strong> prête à utiliser tous les outils et ressources à ma disposition, y compris les outils de développement de navigateur, le débogage méticuleux du codage et de faire appel aux précieuses communautés d'assistance en ligne. J'ai une capacité naturelle à décomposer des problèmes complexes en parties gérables et à trouver des solutions efficaces.
+            </li>
+            <li>
+              <strong>Excellentes compétences en communication :</strong> mon expérience professionnelle dans l'enseignement primaire et secondaire et en tant que musicien d'orchestre a perfectionné mes compétences en communication, me permettant de collaborer efficacement avec des équipes interfonctionnelles et des clients.
+            </li>
+            <li>
+              <strong>Souci du détail :</strong> j'effectue des tests approfondis et une vérification exhaustive à l'aide d'outils navigateurs pour identifier les problèmes de compatibilité. Je suis méticuleuse et concentrée, ce qui garantit la qualité et la précision de mon travail.
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <div class="container">
+          <h2>Contactez-moi</h2>
+          <p>
+            Si vous souhaitez entrer en contact ou discuter de potentielles opportunités, n'hésitez pas à me joindre :
+          </p>
+          <div class="contact-form-container" id="contact-form-container">
+            <p></p>
+            <br>
+            <form class="contact-form" id="contact-form">
+              <label for="name">Nom : </label>
+              <input type="text" id="name" name="name" required />
+      
+              <label for="email">E-mail :</label>
+              <input type="email" id="email" name="email" required />
+      
+              <label for="message">Message : </label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <br>
+              <button type="submit" id="send-email-button">Envoyer</button>
+            </form>
+          </div>
+          <div id="success-message" style="display: none;">
+            Message envoyé !
+          </div>
+          <div id="error-message" style="display: none;">
+            Erreur !
+          </div>
+        </div>
+      </section>
+      
+      <footer>
+        <div class="container">
+          <div class="contact-links">
+            <div id="email-container">
+              <a href="https://www.linkedin.com/in/ariane-saulnier" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/aria-vero-s" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+              <a id="email-icon" aria-hidden="true"><i class="fa fa-envelope"></i>Email <a id="email-address" class="hidden">ariane.saulnier@gmail.com</a></a>
+            </div>
+          </div>
+          <p>&copy; 2023 Ariane Saulnier</p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+      </body>
+      </html>
+      
