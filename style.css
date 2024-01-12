@@ -95,7 +95,7 @@ header {
     max-width: 660px;
     max-height:100vh;
     position: relative;
-    top:10%;
+    top:0%;
     margin: 0 auto;
     padding: 20px;
     text-align: left;
@@ -103,6 +103,58 @@ header {
 
 .hero-container h2 {
     font-size: 3rem;
+}
+
+.hero-social-links {
+    font-size: large;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.hero-social-links a {
+    color:#fe5f55;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-social-links a:hover {
+    color:#707565;
+}
+
+.hero-container img {
+    border-radius:1000px;
+    padding: 50px;
+    mix-blend-mode: multiply;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    min-width:25vw;
+    min-height: 25vw;
+    max-width:35vw;
+    max-height: 35vw;
+}
+
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume a {
+    text-decoration: none;
+    color:#fe5f55;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume a:hover {
+    color:#707565;
 }
 
 /* Styles for mobile view */
