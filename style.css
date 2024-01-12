@@ -61,6 +61,7 @@ button {
 button:hover {
     color: #f0b67f;
     border-color: #f0b67f;
+    cursor: pointer;
 }
 
 ul {

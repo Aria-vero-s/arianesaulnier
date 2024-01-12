@@ -37,6 +37,18 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('case-study-button2').addEventListener('click', function() {
       toggleCaseStudy('case-study2');
     });
+
+    document.getElementById('case-study-button3').addEventListener('click', function() {
+      toggleCaseStudy('case-study3');
+    });
+
+    document.getElementById('case-study-button4').addEventListener('click', function() {
+      toggleCaseStudy('case-study4');
+    });
+
+    document.getElementById('case-study-button5').addEventListener('click', function() {
+      toggleCaseStudy('case-study5');
+    });
   });
   
 
