@@ -125,19 +125,16 @@ header {
     border-radius:1000px;
     padding: 50px;
     mix-blend-mode: multiply;
+    min-width:40%;
+    min-height:auto;
+    max-width:55%;
+    max-height:auto;
 }
 
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.profile-image {
-    min-width:25vw;
-    min-height: 25vw;
-    max-width:35vw;
-    max-height: 35vw;
 }
 
 .hero-cta {
@@ -151,6 +148,10 @@ header {
 @media (max-width: 568px) {
     .hero-container h2 {
         font-size: 2rem !important;
+    }
+    .hero-container img {
+        margin-top: 40px;
+        padding: 10px;
     }
 }
 
