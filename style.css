@@ -64,26 +64,6 @@ button:hover {
     cursor: pointer;
 }
 
-.language-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: #fe5f55;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 0px !important;
-    border:1px solid;
-    border-color: #fe5f55;
-    transition: all 0.3s;
-}
-
-.language-button:hover {
-    color: #f0b67f;
-    border-color: #f0b67f;
-    cursor: pointer;
-}
-
 ul {
     padding:10px;
 }
@@ -167,16 +147,6 @@ header {
     align-items: center;
 }
 
-.resume a {
-    text-decoration: none;
-    color:#fe5f55;
-    transition: all 0.3s ease-in-out;
-}
-
-.resume a:hover {
-    color:#707565;
-}
-
 /* Styles for mobile view */
 @media (max-width: 568px) {
     .hero-container h2 {
@@ -185,6 +155,7 @@ header {
 }
 
 .cta-button {
+    width:fit-content;
     font-size: 1.2rem;
     display: inline-block;
     padding: 10px 20px;
@@ -292,6 +263,69 @@ nav {
         display: flex;
         z-index: 1000;
     }
+}
+
+.right-nav-links {
+    min-width: max-content;
+    margin: 0;
+    padding:0;
+}
+
+.right-nav-links a {
+    text-decoration: none;
+    color:#fe5f55;
+    transition: all 0.3s ease-in-out;
+}
+
+.right-nav-links a:hover {
+    color:#707565;
+}
+
+.resume-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fe5f55;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0px !important;
+    border-radius: 5px;
+    border:1px solid;
+    border-color: #fe5f55;
+    transition: all 0.3s;
+}
+
+.resume-button:hover {
+    color: #f0b67f;
+    border-color: #f0b67f;
+    cursor: pointer;
+}
+
+/* Styles for mobile view */
+@media (max-width: 568px) {
+    .right-nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.language-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fe5f55;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 0px !important;
+    border:1px solid;
+    border-color: #fe5f55;
+    transition: all 0.3s;
+}
+
+.language-button:hover {
+    color: #f0b67f;
+    border-color: #f0b67f;
+    cursor: pointer;
 }
 
 /* About */
