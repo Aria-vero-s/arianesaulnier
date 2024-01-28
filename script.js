@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Add event listeners to the "Case Study" buttons
+  // "Case Study" buttons
   document.getElementById('case-study-button1').addEventListener('click', function () {
     toggleCaseStudy('case-study1');
   });
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     emailAddress.classList.toggle('hidden');
   }
 
-  // Add a click event listener to the email icon
+  // Email icon
   emailIcon.addEventListener('click', toggleEmail);
 });
 
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const successMessage = document.getElementById("success-message");
   const errorMessage = document.getElementById("error-message");
 
-  // Add a submit event listener to the form
+  // Form
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the default form submission
 
