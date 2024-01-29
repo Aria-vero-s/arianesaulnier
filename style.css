@@ -44,6 +44,18 @@ h3 {
     font-size: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+    color: #fe5f55;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f0b67f;
+    transition: all 0.3s ease-in-out;
+}
+
 button {
     display: inline-block;
     padding: 10px 20px;
